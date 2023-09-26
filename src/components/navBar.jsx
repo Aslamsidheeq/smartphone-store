@@ -4,9 +4,6 @@ import { CartIcon } from '../icon';
 const Navbar = () =>{
 
     const {amount} = useSelector((store)=> store.cart)
-    // console.log(useSelector((store)=>{
-    //     console.log(store.cart);
-    // }))
     return(
         <nav className='nav-center'>
             <h3>redux toolkit</h3>
