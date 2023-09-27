@@ -6,7 +6,7 @@ const Navbar = () =>{
     const {amount} = useSelector((store)=> store.cart)
     return(
         <nav className='nav-center'>
-            <h3>redux toolkit</h3>
+            <h3>Smartphone Store</h3>
             <div className='nav-container'>
                 <CartIcon/>
                 <div className="amount-container">
