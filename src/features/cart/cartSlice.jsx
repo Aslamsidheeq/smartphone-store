@@ -42,5 +42,13 @@ const cartSlice = createSlice({
 })
 // console.log(cartSlice)
 
-export const {clearCart,removeItem,increase,decrease,calculateTotals} = cartSlice.actions;
+export const {clearCart,removeItem,increase,decrease,calculateTotals} = cartSlice.actions;   //action creators
 export default cartSlice.reducer;
+
+//  In a redux application, the state is stored in a
+//  single store file , and the components can access 
+//  the state by subscribing to the store.
+//  When an action is dispatched, it is sent to the reducer,
+//  which updates the state based on the action type and 
+//  payload. The updated state is then sent back to the store,
+//  which notifies all subscribed components of the change.

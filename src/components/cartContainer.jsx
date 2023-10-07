@@ -1,6 +1,7 @@
 import { useSelector,useDispatch } from "react-redux";
 import CartItem from "./cartItem";
 import { openModal } from "../features/modal/modalSlice";
+import { openPopup } from "../features/popup/popupSlice"
 
 const CartContainer = () =>{
     const dispatch = useDispatch();
@@ -18,6 +19,7 @@ const CartContainer = () =>{
     return(
         <section className="cart">
             <header>
+                <button onClick={()=>dispatch(openPopup())}>How it works❓</button>
                 <h2>Your bag</h2>
             </header>
             <div>
